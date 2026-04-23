@@ -56,8 +56,8 @@ const details = [
   {
     image: exterior,
     label: 'Access',
-    title: 'Free Adjacent + Street Parking',
-    body: 'Easy access right on Memorial Drive.',
+    title: 'Indoor + Street Parking',
+    body: 'Easy access, right on Memorial Drive.',
   },
 ]
 
@@ -91,7 +91,7 @@ export default function App() {
         <a href="#top" className="brand-mark">Daily Dose</a>
         <nav className="desktop-nav">
           <a href="#about">About</a>
-          <a href="#space">The Space</a>
+          <a href="#space">Space</a>
           <a href="#experience">Experience</a>
           <a href="#visit">Visit</a>
         </nav>
@@ -131,10 +131,10 @@ export default function App() {
           <FadeIn delay={0.24}>
             <div className="button-row">
               <a className="button button-primary" href={MAPS_URL} target="_blank" rel="noreferrer">
-                Get Directions
+                Directions
               </a>
               <a className="button button-secondary" href="#visit">
-                View Hours
+                Hours
               </a>
             </div>
           </FadeIn>
@@ -167,13 +167,16 @@ export default function App() {
           <FadeIn delay={0.14}>
             <div className="body-copy">
               <p>
-                Daily Dose Coffee is a refined coffee shop in Reynoldstown, built around the idea that environment matters.
+                Daily Dose Coffee is a neighborhood café in Reynoldstown, built around the idea that environment matters.
               </p>
               <p>
-                Clean lines, warm materials, and a quiet atmosphere make it a place to meet, work, or settle in longer than you planned.
+                Clean lines. Warm materials. A quiet, intentional atmosphere designed for people who want more than a quick stop.
               </p>
               <p>
-                The coffee program features <strong>Stumptown Coffee Roasters</strong>, with fresh baked goods from <strong>Alon’s Bakery</strong>.
+                We serve <strong>Stumptown Coffee Roasters</strong> alongside a curated selection of teas and fresh pastries from <strong>Alon’s Bakery</strong>.
+              </p>
+              <p>
+                Whether you're meeting, working, or taking a break, this is a place to settle in.
               </p>
             </div>
           </FadeIn>
@@ -199,9 +202,7 @@ export default function App() {
             <FadeIn key={item.title}>
               <figure className="gallery-item">
                 <img src={item.image} alt={item.alt} />
-                <figcaption>
-                  {index < 2 ? item.title : ''}
-                </figcaption>
+                <figcaption>{item.title}</figcaption>
               </figure>
             </FadeIn>
           ))}
@@ -282,9 +283,7 @@ export default function App() {
               <p className="visit-text">
                 Daily Dose Coffee
                 <br />
-                907 Memorial Drive SE
-                <br />
-                Suite 112
+                907 Memorial Drive SE, Suite 112
                 <br />
                 Atlanta, GA 30316
               </p>
@@ -294,9 +293,9 @@ export default function App() {
             <div>
               <p className="eyebrow">Hours</p>
               <div className="hours-grid">
-                <span>Mon–Fri</span>
+                <span>Monday–Friday</span>
                 <span>7AM – 8PM</span>
-                <span>Sat–Sun</span>
+                <span>Saturday–Sunday</span>
                 <span>8AM – 7PM</span>
               </div>
             </div>
@@ -304,7 +303,7 @@ export default function App() {
           <FadeIn delay={0.24}>
             <div className="button-row visit-buttons">
               <a className="button button-primary" href={MAPS_URL} target="_blank" rel="noreferrer">
-                Open in Google Maps
+                Google Maps
               </a>
               <a className="button button-secondary" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
                 Instagram
@@ -328,10 +327,10 @@ export default function App() {
           <FadeIn delay={0.16}>
             <div className="button-row center-buttons">
               <a className="button button-primary" href={MAPS_URL} target="_blank" rel="noreferrer">
-                Get Directions
+                Directions
               </a>
               <a className="button button-secondary" href="#visit">
-                Visit Today
+                Hours
               </a>
             </div>
           </FadeIn>
